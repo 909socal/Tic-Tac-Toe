@@ -7,7 +7,7 @@ var cnt =0;
 $(document).ready(init);
 
 function init(){
-  $('.col-md-4').on('click' , turnHandler)
+  $('.col-sm-4').on('click' , turnHandler)
   var x = true;
 }
 
@@ -41,14 +41,14 @@ function turnHandler(event){
 }
 
 function winner(){
-    if      ($('#bx1').text() === $('#bx2').text() && $('#bx2').text() !== '' && $('#bx2').text() === $('#bx3').text()) {alert($('#bx1').text() + "Are A Winner !!! ")}
-    else if ($('#bx1').text() === $('#bx4').text() && $('#bx4').text() !== '' && $('#bx4').text() === $('#bx7').text()) {alert($('#bx4').text() + "Are A Winner !!! ")}
-    else if ($('#bx1').text() === $('#bx5').text() && $('#bx5').text() !== '' && $('#bx5').text() === $('#bx9').text()) {alert($('#bx5').text() + "Are A Winner !!! ")}
-    else if ($('#bx4').text() === $('#bx5').text() && $('#bx5').text() !== '' && $('#bx5').text() === $('#bx6').text()) {alert($('#bx5').text() + "Are A Winner !!! ")}
-    else if ($('#bx7').text() === $('#bx8').text() && $('#bx8').text() !== '' && $('#bx8').text() === $('#bx9').text()) {alert($('#bx9').text() + "Are A Winner !!! ")}
-    else if ($('#bx2').text() === $('#bx5').text() && $('#bx5').text() !== '' && $('#bx5').text() === $('#bx8').text()) {alert($('#bx8').text() + "Are A Winner !!! ")}
-    else if ($('#bx3').text() === $('#bx6').text() && $('#bx6').text() !== '' && $('#bx6').text() === $('#bx9').text()) {alert($('#bx8').text() + "Are A Winner !!! ")}
-    else if ($('#bx3').text() === $('#bx5').text() && $('#bx5').text() !== '' && $('#bx5').text() === $('#bx7').text()) {alert($('#bx7').text() + "Are A Winner !!! ")}
+    if      ($('#bx1').text() === $('#bx2').text() && $('#bx2').text() !== '' && $('#bx2').text() === $('#bx3').text()) {alert($('#bx1').text() + " Are A Winner !!! ")}
+    else if ($('#bx1').text() === $('#bx4').text() && $('#bx4').text() !== '' && $('#bx4').text() === $('#bx7').text()) {alert($('#bx4').text() + " Are A Winner !!! ")}
+    else if ($('#bx1').text() === $('#bx5').text() && $('#bx5').text() !== '' && $('#bx5').text() === $('#bx9').text()) {alert($('#bx5').text() + " Are A Winner !!! ")}
+    else if ($('#bx4').text() === $('#bx5').text() && $('#bx5').text() !== '' && $('#bx5').text() === $('#bx6').text()) {alert($('#bx5').text() + " Are A Winner !!! ")}
+    else if ($('#bx7').text() === $('#bx8').text() && $('#bx8').text() !== '' && $('#bx8').text() === $('#bx9').text()) {alert($('#bx9').text() + " Are A Winner !!! ")}
+    else if ($('#bx2').text() === $('#bx5').text() && $('#bx5').text() !== '' && $('#bx5').text() === $('#bx8').text()) {alert($('#bx8').text() + " Are A Winner !!! ")}
+    else if ($('#bx3').text() === $('#bx6').text() && $('#bx6').text() !== '' && $('#bx6').text() === $('#bx9').text()) {alert($('#bx8').text() + " Are A Winner !!! ")}
+    else if ($('#bx3').text() === $('#bx5').text() && $('#bx5').text() !== '' && $('#bx5').text() === $('#bx7').text()) {alert($('#bx7').text() + " Are A Winner !!! ")}
     else if (cnt >=9){alert(" Game Is A Tie!!!")}
 }
 
